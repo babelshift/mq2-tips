@@ -52,9 +52,25 @@ After downloading the release of your choice, extract the package to wherever is
 
 Before you go crazy downloading all sorts of extra plugins and researching how to write macros, I would highly suggest just running the vanilla release of MQ2 with your EverQuest client to ensure things are going to work as you expect.
 
-1. If you want to multi-box, first run `EQBCS2.exe` to start the chat server between your characters. This will start a console that should contain something like this:
+1. If you want to multi-box, launch `EQBCS2.exe` to start the chat server between your characters. This will start a console that should contain something like this:
 
    ```shell
    EQ Box Chat Server 10.12.18
    Waiting for connections on port: 2112...
    ```
+
+   Note that you might need to update the `MQ2EQBC.ini` config file to contain the correct IP address for the chat server to listen on. 
+
+   - `MQ2EQBC.ini`
+
+     ```ini
+     [Last Connect]
+     Server=<ip_address>
+     Port=2112
+     ```
+
+   If you want to multi-box across different computers, the `<ip_address>` should be something that computers on your local network can connect with (ie. your computer's network IP address as setup in your router). If you only want to multi-box on a single computer with multiple instances of EverQuest, then the `<ip_address>` should be `127.0.01` to indicate connections to your `localhost`.
+
+2. Regardless of what you do with Step #1 above, you will need to launch `MacroQuest2.exe` to start the MQ2 process. There is no immediate visual indication that it is running, so make sure you check in your system tray (lower right corner on Windows) to see the MQ2 icon.
+
+3. After confirming that MQ2 is running, launch EverQuest. When you get to the character select screen, you should see new chat box popups which indicate that MQ2 has been injected to the process and running successfully. If you don't see this, make sure MQ2 is actually running and make sure it's a version of MQ2 which is compatible with your EverQuest client.
