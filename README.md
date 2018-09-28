@@ -1,15 +1,14 @@
-# Table of contents
-
+## Table of contents
 1. [Introduction](#introduction)
 2. [What is MacroQuest2?](#whatis)
 3. [Disclaimer](#disclaimer)
+4. [Setup](#setup)
+5. [Getting Started](#getting-started)
 
 ## Introduction <a name="introduction"></a>
-
 The page is being created to act as a beginner's guide to MacroQuest2 (MQ2). As I learn more about its functions, I will be documenting my findings here in a no-nonsense and easily understandable layout for even the most tech illiterate among us.
 
 ## What is MacroQuest2? <a name="whatis"></a>
-
 MacroQuest2 (MQ2) is a customizable application to perform automatic actions within EverQuest. It allows for automating tasks such as casting spells, character movement, looting corpses, responding to dialog boxes, and a lot more. The ecosystem is wide ranging and allows for customizing nearly any type of action in the game. In fact, you can further customize MQ2 by writing your own macros, scripts, and plugins.
 
 ## Disclaimer <a name="disclaimer"></a>
@@ -17,7 +16,6 @@ MacroQuest2 (MQ2) is a customizable application to perform automatic actions wit
 Using MQ2 violates user agreements in some scenarios. I wouldn't suggest using MQ2 on EverQuest Live servers or emulated servers that explicitly ban its use. If you do, you have only yourself to blame if or when you are banned.
 
 ## Setup <a name="setup"></a>
-
 ### Word of Warning
 
 Before you rush out there to download MQ2, please be aware that there are various ways to obtain it, and the differences between those ways are important to understand. 
@@ -32,7 +30,7 @@ Keep this in mind as you search around for the community you want to join. If yo
 
 After downloading the release of your choice, extract the package to wherever is convenient for you. In the extracted folder, you should see a `Macros` folder, `EQBCServer.exe`, `MacroQuest2.exe`, and a bunch of `dll` files. If you don't see these, then you might have a weird build.
 
-### Explanation of Folders and Files
+### Common Folders and Files
 
 - `Macros` folder:
   - Used to house scripts used by MQ2 and any custom scripts that you want to use as part of your play session
@@ -48,4 +46,15 @@ After downloading the release of your choice, extract the package to wherever is
   - For some limited examples:
     - `MQ2MoveUtils.dll` provides advanced movement automation
     - `MQ2Twist.dll` provides automated bard song twisting
-    - `MQ2AutoGroup.dll` provides automated group invite and accept across multi boxes
+    - `MQ2AutoGroup.dll` provides automated group invite and accept across multi-boxes
+
+## Getting Started <a name="getting-started"></a>
+
+Before you go crazy downloading all sorts of extra plugins and researching how to write macros, I would highly suggest just running the vanilla release of MQ2 with your EverQuest client to ensure things are going to work as you expect.
+
+1. If you want to multi-box, first run `EQBCS2.exe` to start the chat server between your characters. This will start a console that should contain something like this:
+
+   ```shell
+   EQ Box Chat Server 10.12.18
+   Waiting for connections on port: 2112...
+   ```
