@@ -69,7 +69,7 @@ Before you go crazy downloading all sorts of extra plugins and researching how t
      Port=2112
      ```
 
-   If you want to multi-box across different computers, the `<ip_address>` should be something that computers on your local network can connect with (ie. your computer's network IP address as setup in your router). If you only want to multi-box on a single computer with multiple instances of EverQuest, then the `<ip_address>` should be `127.0.01` to indicate connections to your `localhost`.
+   If you want to multi-box across different computers, the `<ip_address>` should be something that computers on your local network can connect with (ie. your computer's network IP address as setup in your router). If you only want to multi-box on a single computer with multiple instances of EverQuest, then the `<ip_address>` should be `127.0.0.1` to indicate connections to your `localhost`.
 
 2. Regardless of what you do with Step #1 above, you will need to launch `MacroQuest2.exe` to start the MQ2 process. There is no immediate visual indication that it is running, so make sure you check in your system tray (lower right corner on Windows) to see the MQ2 icon.
 
